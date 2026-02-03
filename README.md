@@ -1,2 +1,31 @@
 # webrecon
-Personalized Website Vulnerability Reconnaissance
+
+**webrecon** is a lightweight and configurable web reconnaissance pipeline designed for authorized security assessments.  
+It focuses on safe, low-noise discovery and vulnerability identification using modern open-source tools.
+
+## ✨ Features
+- Live host verification
+- Lightweight crawling
+- Historical URL collection
+- Safe vulnerability scanning
+- Non-intrusive XSS discovery
+- Proxy support (e.g., Burp)
+
+## 🧰 Tools Used
+- httpx
+- katana
+- nuclei
+- gau
+- waybackurls
+- dalfox
+
+## 🚀 Usage
+```bash
+# Single target
+./safe_web_scan.sh --single
+
+# Subdomain scope
+./safe_web_scan.sh --subdomains example.com
+
+# With proxy
+./safe_web_scan.sh --single --proxy http://127.0.0.1:8080
